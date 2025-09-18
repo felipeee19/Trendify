@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css contato/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tela de Login</title>
+</head>
+<body>
+  <header>
+    <h1>Trendify</h1>
+    
+   </header>
+
+   <main>
+       <a href="index.html">home</a>
+       <a href="itens.html">itens</a>
+       <a href="contato.html">login</a>
+       <a href="sobre mim.html">historia</a>
+   </main>
+   <br>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" novalidate>
+      <div class="input-group">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" placeholder="Digite seu usuário" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
+      </div>
+      <button type="submit">  Entrar</button>
+      <div id="message" class="message"></div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const username = e.target.username.value.trim();
+      const password = e.target.password.value.trim();
+      const messageEl = document.getElementById('message');
+      
+      if (!username || !password) {
+        messageEl.textContent = 'Por favor, preencha todos os campos.';
+        messageEl.className = 'message error';
+        return;
+      }
+      
+      // Usuário válido pode ser 'usuario' e senha 'senha123' - exemplo
+      if (username === 'felipe' && password === '150909') {
+        window.location.href = 'dashboard.html';
+      } else {
+        messageEl.textContent = 'Usuário ou senha inválidos.';
+        messageEl.className = 'message error';
+      }
+    });
+    
+  </script>
+  <footer>
+    © 2025 Trendify . Todos os direitos reservados. <br>
+    Navegue com tranquilidade. Sua experiência é a nossa prioridade
+</footer>
+</body>
+</html>
+

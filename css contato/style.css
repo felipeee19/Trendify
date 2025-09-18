@@ -1,0 +1,121 @@
+     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(135deg, black, #2575fc);
+      transition: backgroud 1s;
+      font-family: 'Roboto', sans-serif;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .login-container {
+      background: black;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+      margin: auto;
+      
+    }
+    .login-container h2 {
+      margin-bottom: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #444;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 14px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #2575fc;
+      outline: none;
+      background-color: #f7f9ff;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #2575fc;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #1a52d1;
+      
+    }
+    .message {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .message.error {
+      color: #e74c3c;
+    }
+    h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 5px 5px black;
+    
+}
+h1:hover{
+   transition: 0.7s;
+}
+main{
+    background: linear-gradient(150deg, black,darkblue, #2575fc);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 5px 30px ;
+    transition: 0.7s;
+}
+a:hover{
+       transform: translateY(-10px);
+       transition: 0.7s;
+       box-shadow: 20px 20px 30px black;
+}
+footer{
+    height: 60px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: 10px;
+}
